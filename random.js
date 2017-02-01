@@ -5,7 +5,24 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+    makeCircle(100,100,30,"white",1)
+makeCircle(100,60,25,"white",1)
+makeCircle(100,20,20,"white",1)
+makeCircle(100,60,3,"black",1)
+makeCircle(100,70,3,"black",1)
+makeCircle(100,50,3,"black",1)
+makeCircle(90,20,2,"black",1)
+makeCircle(110,20,2,"black",1)
+ makeLine(78,50 ,50, 75, "brown",3,1)
+makeLine(122,50, 150,75,"brown",3,1)
+makeLine(100,25, 120,25,"orange",1,1)
+makeCircle(100,30,1,"black",1)
+makeCircle(90,28,1,"black",1)
+makeCircle(95,30,1,"black",1)
+makeCircle(112,28,1,"black",1)
+makeCircle(108,30,1,"black",1)
+makeCircle(105,30,1,"black",1)
+makeImage("http://vignette3.wikia.nocookie.net/clubpenguin/images/6/60/TopHatPuffleHat.png/revision/latest?cb=20131003112048",95,0,10,10)
 }
 
 
@@ -32,18 +49,23 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var randoNumber = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
     
-    
+    if(randoNumber < 0.33){ 
+        createFirstScene() 
+    }
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
-    
+    else if (randoNumber < 0.67){
+        createSecondScene()
+    }
     
     
     // Else, call the function to create your third scene.
-    
-    
+    else { 
+        createThirdScene()
+    }
     
 }
 
