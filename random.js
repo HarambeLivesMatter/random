@@ -5,6 +5,7 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
+    
     makeCircle(100,100,30,"white",1)
 makeCircle(100,60,25,"white",1)
 makeCircle(100,20,20,"white",1)
@@ -30,6 +31,18 @@ makeImage("http://vignette3.wikia.nocookie.net/clubpenguin/images/6/60/TopHatPuf
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
+    makeRect(0,0,390,300,"black",1)
+makeRect(20,150,50,150,"brown",1)
+makeRect(35,130,20,20,"white",1)
+makeEllipse(45, 120, 4, 10, "red", 1)
+makeEllipse(45, 120, 2, 8, "orange", 1)
+makeRect(240,150,50 ,150,"brown",1)
+makeRect(255,130,20,20,"white",1)
+makeEllipse(265,120,4,10,"red",1)
+makeEllipse(265,120,2,8,"orange",1)
+makeRect(65,150,180,150,"brown",1)
+makeImage("https://img.clipartfox.com/ee8cb2242f97b42d1b5eba8ac069a197_melting-snowman-royalty-free-clipart-melting-snowman_1300-1025.jpeg",105,105,50,50,1)
+
     
 }
 
@@ -38,6 +51,13 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
+    makeRect(0,0,300,300,"lightblue",1)
+makeRect(0,150,300,150,"yellow",1)
+makeLine(150,150,150,100,"brown",2,1)
+makeLine(120,150,120,100,"brown",2,1)
+makeRect(70,50,120,50,"brown",1)
+makeText("SnowMen Population:0", 75, 90, 10,  'Roboto', "white",1)
+makeText("Nosnowmen Town",75,70,10,'Roboto',"white",1)
     
 }
 
