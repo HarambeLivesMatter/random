@@ -5,7 +5,9 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+  var rando =  Math.random()
+    if(rando > 0.5){
+        makeImage("http://kingofwallpapers.com/snowing/snowing-002.jpg",0,0,400,400)    
     makeCircle(100,100,30,"white",1)
 makeCircle(100,60,25,"white",1)
 makeCircle(100,20,20,"white",1)
@@ -24,6 +26,27 @@ makeCircle(112,28,1,"black",1)
 makeCircle(108,30,1,"black",1)
 makeCircle(105,30,1,"black",1)
 makeImage("http://vignette3.wikia.nocookie.net/clubpenguin/images/6/60/TopHatPuffleHat.png/revision/latest?cb=20131003112048",95,0,10,10)
+}else if(rando < 0.5){
+makeImage("http://kingofwallpapers.com/snowing/snowing-002.jpg",0,0,400,400)    
+makeCircle(100,100,30,"white",1)
+makeCircle(100,60,25,"white",1)
+makeCircle(100,20,20,"white",1)
+makeCircle(100,60,3,"black",1)
+makeCircle(100,70,3,"black",1)
+makeCircle(100,50,3,"black",1)
+makeCircle(90,20,2,"black",1)
+makeCircle(110,20,2,"black",1)
+ makeLine(78,50 ,50, 75, "brown",3,1)
+makeLine(122,50, 150,75,"brown",3,1)
+makeLine(100,25, 120,25,"orange",1,1)
+makeCircle(100,30,1,"blue",1)
+makeCircle(90,28,1,"blue",1)
+makeCircle(95,30,1,"blue",1)
+makeCircle(112,28,1,"blue",1)
+makeCircle(108,30,1,"blue",1)
+makeCircle(105,30,1,"blue",1)
+makeImage("http://vignette3.wikia.nocookie.net/clubpenguin/images/6/60/TopHatPuffleHat.png/revision/latest?cb=20131003112048",95,0,10,10)
+}
 }
 
 
@@ -31,6 +54,8 @@ makeImage("http://vignette3.wikia.nocookie.net/clubpenguin/images/6/60/TopHatPuf
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
+    var number = Math.random()
+    if(number > 0.5){
     makeRect(0,0,390,300,"black",1)
 makeRect(20,150,50,150,"brown",1)
 makeRect(35,130,20,20,"white",1)
@@ -41,16 +66,38 @@ makeRect(255,130,20,20,"white",1)
 makeEllipse(265,120,4,10,"red",1)
 makeEllipse(265,120,2,8,"orange",1)
 makeRect(65,150,180,150,"brown",1)
+makeImage("https://img.clipartfox.com/ee8cb2242f97b42d1b5eba8ac069a197_melting-snowman-royalty-free-clipart-melting-snowman_1300-1025.jpeg",105,105,50,50,1)}
+    else if (number < 0.5){
+       makeRect(0,0,390,300,"black",1)
+makeRect(20,150,50,150,"brown",1)
+makeRect(35,130,20,20,"white",1)
+makeEllipse(45, 120, 4, 10, "red", 1)
+makeEllipse(45, 120, 2, 8, "orange", 1)
+makeRect(240,150,50 ,150,"brown",1)
+makeRect(255,130,20,20,"white",1)
+makeEllipse(265,120,4,10,"red",1)
+makeEllipse(265,120,2,8,"orange",1)
+makeRect(65,150,180,150,"brown",1)
 makeImage("https://img.clipartfox.com/ee8cb2242f97b42d1b5eba8ac069a197_melting-snowman-royalty-free-clipart-melting-snowman_1300-1025.jpeg",105,105,50,50,1)
+    makeRect(210,130,20,20,"white",1)
+makeEllipse(220,120,4,10,"red",1)
+makeEllipse(220,120,2,8,"orange",1)
+makeRect(70,130,20,20,"white",1)
+makeEllipse(80,120,4,10,"red",1)
+makeEllipse(80,120,2,8,"orange",1)
+    }
+    }
 
     
-}
+
 
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
+    var hi = Math.random()
+    if(hi > 0.5){
     makeRect(0,0,300,300,"lightblue",1)
 makeRect(0,150,300,150,"yellow",1)
 makeLine(150,150,150,100,"brown",2,1)
@@ -58,7 +105,16 @@ makeLine(120,150,120,100,"brown",2,1)
 makeRect(70,50,120,50,"brown",1)
 makeText("SnowMen Population:0", 75, 90, 10,  'Roboto', "white",1)
 makeText("Nosnowmen Town",75,70,10,'Roboto',"white",1)
-    
+    }else if (hi < 0.5){
+      makeRect(0,0,300,300,"white",1)
+makeRect(0,150,300,150,"yellow",1)
+makeLine(150,150,150,100,"brown",2,1)
+makeLine(120,150,120,100,"brown",2,1)
+makeRect(70,50,120,50,"brown",1)
+makeText("SnowMen Population:0", 75, 90, 10,  'Roboto', "white",1)
+makeText("Nosnowmen Town",75,70,10,'Roboto',"white",1)
+makeImage("https://txtumbleweed100.com/img/tumbleweed.gif",10,100,50,50)
+    }
 }
 
 
