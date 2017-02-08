@@ -7,7 +7,7 @@ var namespace = "http://www.w3.org/2000/svg"
 function createFirstScene() {
   var rando =  Math.random()
     if(rando > 0.5){
-        makeImage("http://kingofwallpapers.com/snowing/snowing-002.jpg",0,0,400,400)    
+        makeImage("http://kingofwallpapers.com/snowing/snowing-002.jpg",0,0,300,300)    
     makeCircle(100,100,30,"white",1)
 makeCircle(100,60,25,"white",1)
 makeCircle(100,20,20,"white",1)
@@ -27,7 +27,7 @@ makeCircle(108,30,1,"black",1)
 makeCircle(105,30,1,"black",1)
 makeImage("http://vignette3.wikia.nocookie.net/clubpenguin/images/6/60/TopHatPuffleHat.png/revision/latest?cb=20131003112048",95,0,10,10)
 }else if(rando < 0.5){
-makeImage("http://kingofwallpapers.com/snowing/snowing-002.jpg",0,0,400,400)    
+makeImage("http://kingofwallpapers.com/snowing/snowing-002.jpg",0,0,300,300)    
 makeCircle(100,100,30,"white",1)
 makeCircle(100,60,25,"white",1)
 makeCircle(100,20,20,"white",1)
@@ -104,16 +104,17 @@ makeLine(150,150,150,100,"brown",2,1)
 makeLine(120,150,120,100,"brown",2,1)
 makeRect(70,50,120,50,"brown",1)
 makeText("SnowMen Population:0", 75, 90, 10,  'Roboto', "white",1)
-makeText("Nosnowmen Town",75,70,10,'Roboto',"white",1)
+makeText("Snowmen Town",75,70,10,'Roboto',"white",1)
     }else if (hi < 0.5){
       makeRect(0,0,300,300,"white",1)
 makeRect(0,150,300,150,"yellow",1)
+makeImage("https://txtumbleweed100.com/img/tumbleweed.gif",10,100,50,50)
 makeLine(150,150,150,100,"brown",2,1)
 makeLine(120,150,120,100,"brown",2,1)
 makeRect(70,50,120,50,"brown",1)
 makeText("SnowMen Population:0", 75, 90, 10,  'Roboto', "white",1)
-makeText("Nosnowmen Town",75,70,10,'Roboto',"white",1)
-makeImage("https://txtumbleweed100.com/img/tumbleweed.gif",10,100,50,50)
+makeText("Snowmen Town",75,70,10,'Roboto',"white",1)
+
     }
 }
 
